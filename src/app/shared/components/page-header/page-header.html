@@ -1,0 +1,31 @@
+<div class="mb-10 flex items-start justify-between">
+
+    <div>
+
+        <h1
+            class="text-4xl font-bold tracking-tight text-[var(--color-text)]">
+
+            {{ title() }}
+
+        </h1>
+
+        @if (subtitle()) {
+
+            <p
+                class="mt-2 text-base text-gray-500">
+
+                {{ subtitle() }}
+
+            </p>
+
+        }
+
+    </div>
+
+    <div>
+
+        <ng-content />
+
+    </div>
+
+</div>

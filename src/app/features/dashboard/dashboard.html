@@ -1,0 +1,154 @@
+<app-page-container>
+
+    <!-- Page Header -->
+    <app-page-header
+        title="Dashboard"
+        subtitle="Welcome back to your Islamic Growth Journal">
+
+        <app-primary-button>
+
+            + New Reflection
+
+        </app-primary-button>
+
+    </app-page-header>
+
+
+    <!-- Statistics -->
+    <app-section-title
+        title="Today's Progress"
+        subtitle="Quick overview of your spiritual journey">
+    </app-section-title>
+
+    <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+
+        <app-stat-card
+            icon="🕌"
+            title="Today's Salah"
+            value="4 / 5"
+            subtitle="80% Completed">
+        </app-stat-card>
+
+        <app-stat-card
+            icon="📖"
+            title="Quran Reading"
+            value="12 Pages"
+            subtitle="+3 today">
+        </app-stat-card>
+
+        <app-stat-card
+            icon="🔥"
+            title="Current Streak"
+            value="14 Days"
+            subtitle="Keep going!">
+        </app-stat-card>
+
+        <app-stat-card
+            icon="📚"
+            title="Seerah"
+            value="3 Lessons"
+            subtitle="This week">
+        </app-stat-card>
+
+    </div>
+
+
+    <!-- Card Example -->
+    <div class="mt-12">
+
+        <app-section-title
+            title="Reflection Card">
+        </app-section-title>
+
+        <app-card>
+
+            <h2 class="text-2xl font-semibold">
+
+                Today's Reflection
+
+            </h2>
+
+            <p class="mt-4 text-gray-600">
+
+                Every small act of consistency builds lasting spiritual growth.
+                Even reading one verse daily is progress.
+
+            </p>
+
+            <div class="mt-8">
+
+                <app-primary-button>
+
+                    Write Reflection
+
+                </app-primary-button>
+
+            </div>
+
+        </app-card>
+
+    </div>
+
+
+    <!-- Progress Ring -->
+    <div class="mt-12">
+
+        <app-section-title
+            title="Weekly Goal">
+        </app-section-title>
+
+        <app-card>
+
+            <div class="flex items-center gap-10">
+
+                <app-progress-ring
+                    [progress]="72">
+                </app-progress-ring>
+
+                <div>
+
+                    <h3 class="text-2xl font-semibold">
+
+                        Weekly Completion
+
+                    </h3>
+
+                    <p class="mt-2 text-gray-500">
+
+                        You're doing great.
+                        Stay consistent to reach your weekly target.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </app-card>
+
+    </div>
+
+
+    <!-- Empty State -->
+    <div class="mt-12">
+
+        <app-section-title
+            title="Empty State">
+        </app-section-title>
+
+        <app-empty-state
+            icon="📔"
+            title="No Reflections Yet"
+            message="Start writing your first journal reflection today.">
+
+            <app-primary-button>
+
+                Write Reflection
+
+            </app-primary-button>
+
+        </app-empty-state>
+
+    </div>
+
+</app-page-container>
