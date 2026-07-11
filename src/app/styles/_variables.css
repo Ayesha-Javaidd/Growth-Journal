@@ -1,0 +1,55 @@
+:root {
+  /* ===== COLORS ===== */
+
+  --color-background: #fff8fb;
+
+  --color-surface: #ffffff;
+
+  --color-primary: #881337;
+
+  --color-primary-dark: #5a112f;
+
+  --color-secondary: #be185d;
+
+  --color-accent: #ec4899;
+
+  --color-border: #f4d7e4;
+
+  --color-text: #1f2937;
+
+  --color-text-muted: #6b7280;
+
+  --color-success: #16a34a;
+
+  --color-warning: #f59e0b;
+
+  --color-danger: #dc2626;
+
+  /* ===== BORDER RADIUS ===== */
+
+  --radius-sm: 0.5rem;
+
+  --radius-md: 0.75rem;
+
+  --radius-lg: 1rem;
+
+  --radius-xl: 1.5rem;
+
+  /* ===== SHADOWS ===== */
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+
+  --shadow-md: 0 6px 18px rgba(0, 0, 0, 0.08);
+
+  --shadow-lg: 0 12px 30px rgba(0, 0, 0, 0.12);
+
+  /* ===== LAYOUT ===== */
+
+  --navbar-height: 72px;
+
+  --sidebar-width: 280px;
+
+  --page-padding: 2rem;
+
+  --transition: all 0.25s ease;
+}
