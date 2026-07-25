@@ -1,25 +1,26 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, input } from '@angular/core';
 import { QuoteCard } from '../quote-card/quote-card';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-hero-banner',
   standalone: true,
-  imports: [QuoteCard],
+  imports: [QuoteCard, CommonModule],
   templateUrl: './hero-banner.html',
   styleUrl: './hero-banner.css',
 })
 export class HeroBanner {
 
-  @Input() greeting = 'Assalamu Alaikum';
+  readonly greeting = input('Assalamu Alaikum');
 
   @Input() name = '';
 
-  @Input() date = '';
+  readonly date = input('');
 
-  @Input() hijriDate = '';
+  readonly hijriDate = input('');
 
-  @Input() verse = '';
+  readonly verse = input('');
 
-  @Input() reference = '';
+  readonly reference = input('');
 
 }

@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-
 import { PageContainer } from '../../shared/components/page-container/page-container';
 import { HeroBanner } from '../../shared/components/hero-banner/hero-banner';
 import { FeatureCard } from '../../shared/components/feature-card/feature-card';
@@ -29,4 +28,4 @@ import { SectionTitle } from '../../shared/components/section-title/section-titl
   templateUrl: './dashboard.html',
   styleUrl: './dashboard.css'
 })
-export class Dashboard {}
+export class Dashboard { }

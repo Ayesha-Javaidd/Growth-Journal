@@ -21,7 +21,7 @@
             class="mt-4 text-5xl font-bold
                    text-[var(--color-primary-dark)]">
 
-            {{ greeting }}
+            {{ greeting() }}
 
             <span *ngIf="name">
 
@@ -29,25 +29,23 @@
 
             </span>
 
-            🌙
-
         </h1>
 
         <p class="mt-3 text-gray-500">
 
-            {{ date }}
+            {{ date() }}
 
             •
 
-            {{ hijriDate }}
+            {{ hijriDate() }}
 
         </p>
 
         <div class="mt-8">
 
             <app-quote-card
-                [verse]="verse"
-                [reference]="reference">
+                [verse]="verse()"
+                [reference]="reference()">
             </app-quote-card>
 
         </div>
