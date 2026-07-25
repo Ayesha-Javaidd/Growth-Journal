@@ -1,20 +1,32 @@
 import { Component } from '@angular/core';
-import { PageContainer } from "../../shared/components/page-container/page-container";
-import { PageHeader } from "../../shared/components/page-header/page-header";
-import { Card } from "../../shared/components/card/card";
-import { PrimaryButton } from "../../shared/components/primary-button/primary-button";
-import { SectionTitle } from "../../shared/components/section-title/section-title";
-import { EmptyState } from "../../shared/components/empty-state/empty-state";
-import { ProgressRing } from "../../shared/components/progress-ring/progress-ring";
-import { StatCard } from "../../shared/components/stat-card/stat-card";
+
+import { PageContainer } from '../../shared/components/page-container/page-container';
+import { HeroBanner } from '../../shared/components/hero-banner/hero-banner';
+import { FeatureCard } from '../../shared/components/feature-card/feature-card';
+import { FocusCard } from '../../shared/components/focus-card/focus-card';
+import { PrayerTracker } from '../../shared/components/prayer-tracker/prayer-tracker';
+import { ConsistencyHeatmap } from '../../shared/components/consistency-heatmap/consistency-heatmap';
+import { JournalCard } from '../../shared/components/journal-card/journal-card';
+import { Timeline } from '../../shared/components/timeline/timeline';
+import { QuickActions } from '../../shared/components/quick-actions/quick-actions';
+import { SectionTitle } from '../../shared/components/section-title/section-title';
 
 @Component({
   selector: 'app-dashboard',
-  imports: [PageContainer, PageHeader, Card, PrimaryButton, SectionTitle, EmptyState, ProgressRing, StatCard],
   standalone: true,
+  imports: [
+    PageContainer,
+    HeroBanner,
+    FeatureCard,
+    FocusCard,
+    PrayerTracker,
+    ConsistencyHeatmap,
+    JournalCard,
+    Timeline,
+    QuickActions,
+    SectionTitle
+  ],
   templateUrl: './dashboard.html',
-  styleUrl: './dashboard.css',
+  styleUrl: './dashboard.css'
 })
-export class Dashboard {
-
-}
+export class Dashboard {}

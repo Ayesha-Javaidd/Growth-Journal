@@ -1,62 +1,82 @@
 <app-page-container>
 
-    <!-- Page Header -->
-    <app-page-header
-        title="Dashboard"
-        subtitle="Welcome back to your Islamic Growth Journal">
+    <!-- Hero -->
+    <app-hero-banner></app-hero-banner>
 
-        <app-primary-button>
-            + New Reflection
-        </app-primary-button>
+    <!-- Continue Journey -->
+    <section class="mt-10">
 
-    </app-page-header>
+        <app-section-title
+            title="Continue Your Journey"
+            subtitle="Resume where you left off">
+        </app-section-title>
 
-    <!-- Hero Banner -->
-    <section
-        class="relative overflow-hidden rounded-[32px] bg-gradient-to-r from-[var(--color-primary-dark)] via-[var(--color-primary)] to-pink-500 p-10 text-white shadow-xl">
+        <div class="mt-5 grid grid-cols-1 gap-6 md:grid-cols-3">
 
-        <div class="relative z-10">
+            <app-feature-card
+                icon="🕌"
+                title="Salah"
+                subtitle="Track today's prayers"
+                actionText="Open">
+            </app-feature-card>
 
-            <p class="text-sm uppercase tracking-[0.3em] text-pink-100">
+            <app-feature-card
+                icon="📖"
+                title="Quran"
+                subtitle="Continue reading"
+                actionText="Read">
+            </app-feature-card>
 
-                Today's Journey
-
-            </p>
-
-            <h2 class="mt-3 text-5xl font-bold">
-
-                Assalamu Alaikum 🌙
-
-            </h2>
-
-            <p class="mt-5 max-w-2xl text-lg leading-8 text-pink-100">
-
-                Every prayer, every verse and every lesson brings you
-                one step closer to becoming the person you aspire to be.
-
-            </p>
-
-            <div class="mt-8 flex flex-wrap gap-4">
-
-                <app-primary-button>
-
-                    Continue Journey
-
-                </app-primary-button>
-
-            </div>
+            <app-feature-card
+                icon="📚"
+                title="Seerah"
+                subtitle="Continue your notes"
+                actionText="Explore">
+            </app-feature-card>
 
         </div>
 
-        <!-- Decorative circles -->
+    </section>
 
-        <div
-            class="absolute -right-16 -top-16 h-72 w-72 rounded-full bg-white/10 blur-2xl">
-        </div>
+    <!-- Today's Focus -->
+    <section class="mt-10">
 
-        <div
-            class="absolute bottom-0 right-24 h-40 w-40 rounded-full bg-white/10 blur-xl">
-        </div>
+        <app-focus-card></app-focus-card>
+
+    </section>
+
+    <!-- Prayer Tracker -->
+    <section class="mt-10">
+
+        <app-prayer-tracker></app-prayer-tracker>
+
+    </section>
+
+    <!-- Weekly Consistency -->
+    <section class="mt-10">
+
+        <app-consistency-heatmap></app-consistency-heatmap>
+
+    </section>
+
+    <!-- Reflection -->
+    <section class="mt-10">
+
+        <app-journal-card></app-journal-card>
+
+    </section>
+
+    <!-- Timeline -->
+    <section class="mt-10">
+
+        <app-timeline></app-timeline>
+
+    </section>
+
+    <!-- Quick Actions -->
+    <section class="mt-10 mb-10">
+
+        <app-quick-actions></app-quick-actions>
 
     </section>
 
